@@ -43,7 +43,7 @@
                         </thead>
 
                         <tbody  >
-                            @foreach ($employees)
+                            @foreach ($employees as $items)
                             <tr>
                                 
                                 <td class="">{{$items}}</td>
@@ -53,7 +53,7 @@
                                 <td>{{$items}}</td>
                                 <td>{{$items}}</td>
                                 <td>{{$items}}</td>
-                                <td> 
+                                {{-- <td> 
                                     <span class="badge bg-success"><a href="{{  route('employee.edit')}}" class="btn btn-success mx-3  "><h5>Edit</h5></a></span>
                                 </td>
                                 <td> 
