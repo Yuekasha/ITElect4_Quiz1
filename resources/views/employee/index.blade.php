@@ -43,7 +43,7 @@
                         </thead>
 
                         <tbody  >
-                            @foreach ($employees as $items)
+                            @foreach ($employees)
                             <tr>
                                 
                                 <td class="">{{$items}}</td>
@@ -59,7 +59,7 @@
                                 <td> 
                                     
                                 <span class="badge bg-danger"><a href="{{  route('employee.delete')}}" class="m-3 p-lg-5"><h5>Delete</h5></a></span>
-                                </td>
+                                </td> --}}
                                 
                             </tr>
                             @endforeach
